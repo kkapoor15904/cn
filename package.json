@@ -1,0 +1,44 @@
+{
+    "name": "@kkapoor/cn",
+    "version": "1.0.0",
+    "description": "Utility functions for Tailwind CSS",
+    "main": "dist/index.js",
+    "module": "dist/index.mjs",
+    "types": "dist/index.d.ts",
+    "exports": {
+        ".": {
+            "types": "./dist/index.d.ts",
+            "import": "./dist/index.mjs",
+            "require": "./dist/index.js"
+        },
+        "./join": {
+            "types": "./dist/join.d.ts",
+            "import": "./dist/join.mjs",
+            "require": "./dist/join.js"
+        }
+    },
+    "files": [
+        "dist"
+    ],
+    "scripts": {
+        "build": "tsup",
+        "dev": "tsup --watch",
+        "clean": "rimraf dist"
+    },
+    "keywords": [
+        "tailwind",
+        "css",
+        "utils"
+    ],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "tsup": "^8.5.0",
+        "typescript": "^5.8.3",
+        "rimraf": "^5.0.5"
+    },
+    "dependencies": {
+        "clsx": "^2.1.1",
+        "tailwind-merge": "^3.3.0"
+    }
+}
